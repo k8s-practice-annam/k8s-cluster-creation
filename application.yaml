@@ -1,4 +1,4 @@
-apiVersion: apps/v1
+apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: demo-app
@@ -7,6 +7,7 @@ spec:
   project: default
 source:
   repoURL: https://github.com/k8s-practice-annam/k8s-cluster-creation.git
+  targetRevision: HEAD
 destination:
   server: https://kubernetes.default.svc
   namespace:
