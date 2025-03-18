@@ -7,8 +7,8 @@ spec:
   project: default
   source:
     repoURL: https://github.com/k8s-practice-annam/k8s-cluster-creation.git
-    #targetRevision: HEAD
-    #path: 
+    targetRevision: HEAD
+    path: sample-manifests 
   destination:
     server: https://kubernetes.default.svc
     namespace: test-ns
