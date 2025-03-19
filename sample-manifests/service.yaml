@@ -6,7 +6,7 @@ metadata:
   name: demo-svc
 spec:
   ports:
-  - name: Node
+  - name: node
     port: 8080
     protocol: TCP
     targetPort: 8081
