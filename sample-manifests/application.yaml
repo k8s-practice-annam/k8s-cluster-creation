@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: git@github.com:k8s-practice-annam/k8s-cluster-creation.git
+    repoURL: https://github.com/k8s-practice-annam/k8s-cluster-creation.git
     targetRevision: HEAD
     path: sample-manifests 
   destination:
