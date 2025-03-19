@@ -10,7 +10,7 @@ spec:
     targetRevision: HEAD
     path: sample-manifests 
   destination:
-    server: https://kubernetes.default.svc
+    server: https://DF207F1831FD8BD82E3F8C67ED826DC0.gr7.us-east-1.eks.amazonaws.com
     namespace: test-ns
   syncPolicy:
     automated:
