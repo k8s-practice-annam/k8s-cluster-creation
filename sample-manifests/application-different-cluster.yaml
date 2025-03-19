@@ -11,7 +11,7 @@ spec:
     path: sample-manifests 
   destination:
     server: https://kubernetes.default.svc
-    namespace: test-ns
+    namespace: demo-ns
   syncPolicy:
     automated:
       prune: true
