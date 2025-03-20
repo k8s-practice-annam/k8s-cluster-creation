@@ -11,7 +11,6 @@ spec:
     path: sample-manifests 
   destination:
     server: https://82B0F7BE1DD01E14340D01B35CC9DAA5.gr7.us-east-1.eks.amazonaws.com
-    namespace: test-ns
   syncPolicy:
     automated:
       prune: true
