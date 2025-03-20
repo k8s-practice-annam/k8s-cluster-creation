@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: pod
+  name: pod
+  namespace: test-ns
+spec:
+  containers:
+  - name: demo-app-4
+    image: tomcat:latest
+  - name: demo-app-5
+    image: nginx:latest
+    ports:
+    - containerPort: 8081
+
+
+
+# FOr pods, we will have a use-case like multi-container pods
+# In this, we will give multiple images to create.
+# In this case, only the first container will be created by default and the second image creation will be terminated due to error
+# In this case, what we need to do is to expose the second container to the different port rather than the port of the first container
+#
