@@ -13,12 +13,12 @@ spec:
     server: https://82B0F7BE1DD01E14340D01B35CC9DAA5.gr7.us-east-1.eks.amazonaws.com
     namespace: demo-ns-1
   syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true
     syncOptions:
     - CreateNamespace=true
     - RespectIgnoreDifferences=true
-
+    automated:
+      prune: true
+      selfHeal: true
+    
 
 
