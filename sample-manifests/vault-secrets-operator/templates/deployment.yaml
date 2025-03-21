@@ -4,6 +4,7 @@ metadata:
   name: {{ include "vault-secrets-operator.fullname" . }}
   labels:
     {{- include "vault-secrets-operator.labels" . | nindent 4 }}
+    namespace: demo-ns-1
 spec:
   {{- if not .Values.autoscaling.enabled }}
   replicas: {{ .Values.replicaCount }}
