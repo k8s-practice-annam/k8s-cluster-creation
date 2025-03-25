@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: demo-ns-2
+  labels:
+    app: app-1
+  name: app-1
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: app-1
+  template:
+    metadata:
+      labels:
+        app: app-1
+    spec:
+      containers:
+      - image: nginx:latest
+        name: nginx
